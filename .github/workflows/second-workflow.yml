@@ -1,0 +1,14 @@
+name: second workflow
+on: push
+jobs:
+  hello-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello git hub acton
+        run: echo "hellow this is my second workflow in github action"
+      
+buy-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: buy git hub acton
+        run: echo "buy github action"        
