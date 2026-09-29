@@ -31,4 +31,4 @@ jobs:
         run: test -f script.js
 
       - name: Validate HTML code
-        run: npx htmlhint index.html            
+        run: npx htmlhint index.html       
