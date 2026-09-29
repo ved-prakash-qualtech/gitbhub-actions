@@ -20,6 +20,8 @@ jobs:
   validate-code:
     runs-on: ubuntu-latest
     steps:
+      - name: get-repo-code
+        uses: actions/checkout@v4
       - name: Validate js code
         run: test -f script.js
 
