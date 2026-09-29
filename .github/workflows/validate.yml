@@ -1,0 +1,12 @@
+name: validate workflow
+on: push
+jobs:
+  validate-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Validate html file
+        run: test -f index.html && echo "index.html exists" || echo "index.html does not exist"
+      - name: Validate js file
+        run: test -f script.js && echo "script.js exists" || echo "script.js does not exist"
